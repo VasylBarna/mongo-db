@@ -2,8 +2,7 @@ const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
 // require('dotenv').config()
-const DB_HOST =
-  'mongodb+srv://BVV:5xpevFGqkKesd5WE@cluster0.rutje.mongodb.net/online_shop?retryWrites=true&w=majority'
+const { DB_HOST } = require('DB_HOST')
 const productsRouter = require('./routes/api/products')
 
 const app = express()
