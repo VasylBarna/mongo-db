@@ -2,8 +2,11 @@ const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
 // require('dotenv').config()
-const { DB_HOST } = require('DB_HOST')
 const productsRouter = require('./routes/api/products')
+
+const dotenv = require('dotenv')
+dotenv.config()
+const { DB_HOST } = process.env
 
 const app = express()
 
